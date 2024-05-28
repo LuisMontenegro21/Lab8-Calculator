@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.calculator {
+  background-color: #202020;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.calculator-display {
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  color: white;
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.calculator-keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator-keyboard_container_numbers {
+  display: contents;
+}
+
+.calculator-keyboard_number_key,
+.calculator-keyboard_operator_key {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.calculator-keyboard_number_key:hover,
+.calculator-keyboard_operator_key:hover {
+  background-color: #555;
+}
+
+.calculator-keyboard_number_key:active,
+.calculator-keyboard_operator_key:active {
+  background-color: #777;
+}
+
+.calculator-keyboard_operator_key {
+  background-color: #f98410;
+  color: white;
+}
+
+.calculator-keyboard_operator_key:hover {
+  background-color: #ca5200;
+}
+
+.calculator-keyboard_operator_key:active {
+  background-color: #a64000;
+}
